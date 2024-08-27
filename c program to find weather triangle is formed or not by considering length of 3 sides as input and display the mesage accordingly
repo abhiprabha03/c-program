@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float side1, side2, side3;
+
+    // Ask the user to enter the lengths of the three sides
+    printf("Enter the lengths of the three sides of the triangle:\n");
+    scanf("%f %f %f", &side1, &side2, &side3);
+
+    // Check if the triangle can be formed
+    if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1) {
+        printf("A triangle can be formed with sides %.2f, %.2f, and %.2f.\n", side1, side2, side3);
+    } else {
+        printf("A triangle cannot be formed with sides %.2f, %.2f, and %.2f.\n", side1, side2, side3);
+    }
+
+    return 0;
+}
